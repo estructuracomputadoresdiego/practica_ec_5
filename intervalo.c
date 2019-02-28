@@ -8,6 +8,11 @@ int main(int argc, char const *argv[])
 
 	do{
 
+		if (n>m)
+		{
+			printf("EL PRIMER NUMERO DEBE SER MAYOR\n\n\n");
+		}
+
 		printf("Dame dos números, el primero debe ser mayor que el segundo\n");
 		printf("Primer número:\n");
 		scanf("%d",&m);
