@@ -39,13 +39,17 @@ int main(int argc, char const *argv[])
 		case 'S':
 		case 's':
 
-			fichero = fopen(archivo_volcado, "at");				
+				fichero = fopen(archivo_volcado, "rt");
+			
 				if(fichero == NULL){	
 					printf("Se ha creado un archivo con el nombre fichero.txt en el cual se van a almacenar los factoriales y sus resultados\n");
 					fichero = fopen(archivo_volcado, "at");
 					fprintf(fichero, " El factorial de %.0f es %.0f \n",num,total );
 					fclose(fichero);
+
 				}
+
+
 
 				else{
 					reset_selection_2:
